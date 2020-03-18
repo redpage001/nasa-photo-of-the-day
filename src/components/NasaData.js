@@ -7,9 +7,9 @@ function NasaData() {
     const [photo, setPhoto] = useState([]);
 
     useEffect(() => {
-        axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+        axios.get("https://api.nasa.gov/planetary/apod?api_key=dvmxNt3TlmYANKau1J791EZqUHVG8GSnVglwL2ol")
         .then(response => {
-            console.log(response);
+            // console.log(response);
             setPhoto(response.data.url)
         })
         .catch(error => {
