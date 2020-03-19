@@ -1,11 +1,35 @@
 import React from "react";
+// import styled from "styled-components";
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+
+// const RoverContainer = styled.div `
+//     width: 35%;
+//     height: 60vh;
+//     margin: 0 5%;
+// `;
+
+// const RoverPhoto = styled.img `
+//     width: 100%;
+//     height: 60vh;
+//     border-radius: 30px;
+//     border: solid blue 5px;
+// `;
 
 const SecondCardMaker = props => {
-    // console.log(props);
+
     return (
-        <div className="cardContainer">
-            <h1>Photo from Mars Rover!</h1>
-            <img className="RoverPhoto" alt="random picture from Rover" src={props.photo} />
+        <div css={css `
+            width: 35%;
+            height: 60vh;
+            margin: 0 5%;
+        `}>
+            <img css={css `
+                width: 100%;
+                height: 60vh;
+                border-radius: 30px;
+                border: solid blue 5px;
+            `}alt="random picture from Rover" src={props.photo} />
         </div>
     )
 }
